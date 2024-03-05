@@ -6,7 +6,10 @@ Run the command in git bash terminal
 ## `git clone https://github.com/<your-git-username>/teach-titan.git`
 It will create a teach-titan directory 
 ## `cd teach-titan` 
-It will navigate you to teach-titan directory 
+Now you are inside teach-titan directory 
+
+## `npm ci`
+It will install necessary dependencies 
 
 ## `npm start`
 
