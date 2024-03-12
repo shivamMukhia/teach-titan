@@ -1,23 +1,175 @@
+
+
+<!-- frontend  -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>teach-titan</title>
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""/>
-    
-  <!-- Make sure you put this AFTER Leaflet's CSS -->
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-  crossorigin=""></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>teach-titan</title>
+
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""
+/>
+
+
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div id="map"></div>
-  <div>hello mr shivam </div>
+<div class="parent">
+
+  <div class="first">
+  <a href="/">
+  <div class="home" style="font-size: 20px;" >
+    Home
+  </div>
+</a>
+  <a href="#section2">
+  <div style="font-size: 20px;">
+    About
+  </div>
+</a>
+  </div>
+
+  <div class="second">
+    <a href="#section1" class="map-anchor">
+    <div class="map" >
+      Map
+    </div>
+  </a>
+    <div class="drop-down">
+     
+    <label for="state" class="state">Choose:</label>
+
+    <!-- <select id="state"> -->
+
+      <select id="state" onchange="navigateToPage()">
+        <option value="page1.html">Northen India</option>
+        <option value="page2.html">South India</option>
+        <option value="page2.html">West India</option>
+        <option value="page2.html">East India</option>
+        <!-- Add more options as needed -->
+    </select>
+    </div>
+
+  </div>
+
+</div>
+</div>  
+<div class="body-body">
+  <!-- content -->
+<div class="main-body">
+ <div>
+<img src="https://media.tenor.com/aJJqDd5g12MAAAAM/dam-flood.gif" class="image-body" alt="dam-image">
+</div>
+<div class="main-content">
+  <h1>Welcome to Our Comprehensive Water Resource Mapping Platform</h1>
+  <p class="main-body-p">
+   we are proud to present a revolutionary initiative aimed at centralizing and mapping all water resources across India. Our platform provides a comprehensive overview of dams, rivers, and water treatment plants, offering valuable insights into the country's water infrastructure.
   
-<script src="/map.js"></script> 
+  Our Vision
+  Our vision is to create a single, unified platform that serves as a repository of information on India's water resources. By consolidating data on dams, rivers, and water treatment facilities, we aim to empower stakeholders with the knowledge needed to make informed decisions regarding water management and conservation efforts.
+  
+  Mapping India's Water Landscape
+  Dams: Explore our interactive map to discover detailed information about dams across India, including their locations, capacities, construction dates, and purposes. Learn about the role of dams in irrigation, hydroelectric power generation, flood control, and water supply.
+  
+  Rivers: Dive into our database of rivers, tracing their courses from source to mouth and uncovering key features such as tributaries, flow rates, water quality data, and ecological significance. Understand the importance of rivers in sustaining ecosystems, supporting agriculture, and providing drinking water.
+  
+  Water Treatment Plants: Gain insights into the network of water treatment plants across India, essential for ensuring the supply of clean and safe drinking water to communities. Access information about treatment processes, capacities, water sources, and regulatory compliance.
+  
+  Why It Matters
+  Access to clean and abundant water resources is essential for the well-being and prosperity of India's population. By centralizing data on dams, rivers, and water treatment plants, we can:
+  
+  Facilitate Planning: Governments, policymakers, and urban planners can use our platform to develop sustainable water management strategies, address water scarcity, and mitigate the impacts of climate change.
+  
+  Promote Collaboration: Our platform fosters collaboration among stakeholders, enabling data-driven decision-making and coordination of efforts to address water-related challenges at local, regional, and national levels.
+  
+  Empower Communities: Communities can use our platform to access information about local water resources, advocate for their water rights, and participate in water conservation and management initiatives.
+</p>
+</div>
+</div>
+
+<div class="thin-navigation">
+  <a href="/north.html">
+  <div class="thin-item">
+    Northen India
+  </div>
+</a>
+  <a href="/south.html">
+  <div class="thin-item">
+    South India
+  </div>
+</a>
+<a href="/west.html">
+  <div class="thin-item">
+    West India
+  </div>
+</a>
+  <a href="/east.html">
+  <div class="thin-item">
+    East India
+  </div>
+</a>
+</div>
+
+<section id="section1">
+  <div id="map"> </div>
+
+</section>
+</div>
+
+<section id="section2">
+
+  <div class="footer">
+    
+<footer>
+  <div class="footer-content">
+      <div class="footer-section about">
+          <h3>About Us</h3>
+          <p>Created by Tech-Titan Team<br><br>Shivam Mukhia<br>Rohan Mandal<br>Shailender<br>Shubham Chaubey</p>
+      </div>
+      <div class="footer-section contact">
+          <h3>Contact Us</h3>
+          <p>Email: info@example.com</p>
+          <p>Phone: +123456789</p>
+      </div>
+      <div class="footer-section links">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      &copy;CopyRight 4095
+  </div>
+</footer> 
+  </div>
+
+</section>
+
+
+  <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="./dam.js"></script>
+    <script src="./plant.js"></script>
+    <script src="./map.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
